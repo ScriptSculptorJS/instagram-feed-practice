@@ -1,0 +1,170 @@
+.feed-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-card-div {
+  width: 521px;
+}
+
+.post-top-div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.post-top-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post-rainbow-div {
+  height: 46px;
+  width: 46px;
+  margin-bottom: 0px;
+  border-radius: 37px;
+  background-image: linear-gradient(45deg, #fbe709 0%, #faab0e 25%, #f84e10 40%, #f70753 65%, #cc00d3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-profile-image-div {
+  height: 36.5px;
+  width: 36.5px;
+  border-radius: 33px;
+  overflow: hidden;
+  border: 2.5px solid black;
+}
+
+.post-kristen {
+  object-fit: cover;
+  margin-top: -6px;
+  margin-left: -43px;
+  height: 110px;
+  width: 110px;
+}
+
+.post-username {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 9px;
+}
+
+.post-top-right {
+  height: 46px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.post-dot-div {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.post-dots {
+  margin-top: -5px;
+  margin-left: -5px;
+  height: 30px;
+  width: 30px;
+}
+
+.post-image {
+  width: 520px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+}
+
+.post-bottom-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-bottom-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.post-react-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-react-right {
+  margin-left: auto;
+}
+
+.post-heart-div {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+}
+
+.post-comment-icon-div,
+.post-heart-div,
+.save-icon-div,
+.comment-right {
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-heart-div {
+  margin-right: 15px;
+}
+
+.post-heart-icon {
+  height: 53px;
+}
+
+.post-comment-icon {
+  height: 27px;
+}
+
+.post-save-icon {
+  height: 42px;
+}
+
+.post-bottom-middle {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.name,
+.likes {
+  font-weight: 600;
+}
+
+.likes {
+  margin-bottom: 8px;
+}
+
+.more {
+  color: rgb(168, 168, 168);
+}
+
+.post-bottom-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment-right {
+  margin-left: auto;
+}
+
+.post-smile-icon {
+  height: 41px;
+}

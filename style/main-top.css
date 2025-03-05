@@ -1,0 +1,131 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* turned the container into a flexbox row and having the items horizontally center with column gaps. added a large margin at the top to bring it down below the fixed header container */
+.carousel-div {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 17px;
+  margin-top: 74px;
+  padding-top: 20px;
+  flex-shrink: 0;
+}
+
+/* made a large circle and made its background gradient to outline the profile circle */
+.rainbow-div {
+  height: 72px;
+  width: 72px;
+  margin-bottom: 5px;
+  border-radius: 37px;
+  background-image: linear-gradient(45deg, #fbe709 0%, #faab0e 25%, #f84e10 40%, #f70753 65%, #cc00d3 100%);
+}
+
+/* made each profile's container flex and in a column */
+.other-profile {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+/* made the profile image in a circle shape and a little smaller than the rainbow circle. added margins to place it in the center of the rainbow circle */
+.other-profile-image-div {
+  margin-left: 2px;
+  margin-top: 2px;
+  height: 63.5px;
+  width: 63.5px;
+  border-radius: 33px;
+  overflow: hidden;
+  border: 2.5px solid black;
+}
+
+.other-profile p {
+  font-size: 13px;
+}
+
+/* made sure the images were not warped by allowing them to cover the space instead of fill it */
+.kristen,
+.reese,
+.lavender,
+.alecia {
+  object-fit: cover;
+}
+
+/* updated the height and width of each profile image and added negative top and left margins to get the part I wanted to show in the center of the profile circle */
+.kristen {
+  margin-top: -11px;
+  margin-left: -80px;
+  height: 200px;
+  width: 200px;
+}
+
+.reese {
+  margin-top: 0px;
+  margin-left: -12px;
+  height: 150px;
+  width: 90px;
+}
+
+.emblo {
+  margin-top: -18px;
+  margin-left: -46px;
+  height: 100px;
+  width: 150px;
+}
+
+.lavender {
+  margin-top: 0px;
+  margin-left: -80px;
+  height: 100px;
+  width: 200px;
+}
+
+.alecia {
+  margin-left: -5px;
+  height: 75px;
+  width: 70px;
+}
+
+.crafts {
+  margin-top: -7px;
+  margin-left: -20px;
+  height: 100px;
+  width: 100px;
+}
+
+.every {
+  margin-top: -20px;
+  margin-left: -3px;
+  height: 100px;
+  width: 70px;
+}
+
+.pnw {
+  margin-top: -14px;
+  margin-left: -20px;
+  height: 80px;
+  width: 100px;
+}
+
+/* turned the username container into flex and aligned the username in the center */
+.username {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 834px) {
+  main {
+    margin-left: 83px;
+  }
+  .carousel-div {
+    margin-top: 7px;
+  }
+}

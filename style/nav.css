@@ -1,0 +1,350 @@
+/* made this container fixed to the bottom of the page spanning from left to right. turned it into a flexbox with its content in a row with space all around each item */
+.nav-div {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 55px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(71, 71, 71);
+}
+
+.small-nav-top-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 1px;
+}
+
+.large-nav-top-div,
+.large-nav-bottom-div {
+  opacity: 0;
+  display: none;
+}
+
+.large-nav-top-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+  height: 600px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.large-nav-bottom-div {
+  display: block;
+  margin-top: auto;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.instagram-icon-div {
+  margin-bottom: 34px;
+}
+
+.icon-div {
+  height: 26px;
+  width: 26px;
+  /* all above needs to be removed to go back to where I had it at first */
+  /*padding-top: 4px;*/
+  z-index: 1;
+  overflow: hidden;
+}
+
+.instagram-icon {
+  margin-top: -5px;
+  margin-left: -5px;
+  height: 34px;
+}
+
+.instagram-hover-div,
+.home-hover-div,
+.search-hover-div,
+.explore-hover-div,
+.reels-hover-div,
+.direct-hover-div,
+.heart-hover-div,
+.new-post-hover-div,
+.menu-hover-div {
+  background-color: rgb(38, 38, 38);
+  color: lightgray;
+  position: absolute;
+  border: 1.5px solid lightgray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13.5px;
+  padding: 4px 8px;
+  /*visibility: hidden;*/
+  visibility: hidden;
+  text-wrap: nowrap;
+}
+
+.instagram-hover-div {
+  top: 64px;
+  left: 55px;
+}
+
+.home-div {
+  margin-left: 16px;
+}
+
+.home-hover-div {
+  top: 152px;
+  left: 55px;
+}
+
+.instagram-icon-div:hover .instagram-hover-div,
+.home-div:hover .home-hover-div,
+.search-div:hover .search-hover-div,
+.explore-div:hover .explore-hover-div,
+.reels-div:hover .reels-hover-div,
+.direct-div:hover .direct-hover-div,
+.large-nav-heart-div:hover .heart-hover-div,
+.new-post-div:hover .new-post-hover-div,
+.menu-div:hover .menu-hover-div {
+  visibility: visible;
+  transition: all 1s;
+  transition-delay: .7s;
+}
+
+/* made changes to the images and used what I could find on the internet even though they are not identical to what Instagram has */
+.home,
+.direct,
+.search-icon {
+  height: 26px;
+}
+
+.search-hover-div {
+  top: 212px;
+  left: 55px;
+}
+
+.explore {
+  height: 38px;
+  margin-top: -6px;
+  margin-left: -6px;
+}
+
+.explore-hover-div {
+  top: 268px;
+  left: 55px;
+}
+
+.reels {
+  height: 32px;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.reels-hover-div {
+  top: 327px;
+  left: 55px;
+}
+
+.new-post {
+  margin-top: -6px;
+  margin-left: -6px;
+  height: 38px;
+}
+
+.new-post-hover-div {
+  top: 501px;
+  left: 55px;
+}
+
+.direct {
+  margin-left: -5px;
+}
+
+.direct-hover-div {
+  top: 384px;
+  left: 55px;
+}
+
+.heart-icon {
+  margin-top: -12px;
+  margin-left: -34.5px;
+  height: 50px;
+}
+
+.heart-hover-div {
+  top: 441px;
+  left: 55px;
+}
+
+.profile {
+  height: 26px;
+  border-radius: 15px;
+}
+
+.profile-div {
+  margin-right: 17px;
+}
+
+.menu-div {
+  border-radius: 4px;
+}
+
+.menu {
+  margin-left: -5px;
+  margin-top: -4px;
+  height: 35px;
+}
+
+.menu-hover-div {
+  top:30px;
+  left: 28.5px;
+}
+
+@media (min-width: 834px) and (max-height: 666px) {
+  .nav-div {
+    height: 653px;
+  }
+  .large-nav-red-dot { 
+    top: 412px;
+    left: 45px;
+    background-color: red;
+    border: 2.5px solid black;
+    height: 9px;
+    width: 9px;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 834px) and (min-height: 666px) {
+  .nav-div {
+    height: 695px;
+  }
+  .large-nav-top-div {
+    row-gap: 36px;
+    margin-bottom: 30px;
+    height: 560px;
+  }
+  .large-nav-bottom-div {
+    margin-bottom: 63px; 
+  }
+  .large-nav-red-dot {
+    top: 437px;
+    left: 45px;
+    background-color: red;
+    border: 2.5px solid black;
+    height: 9px;
+    width: 9px;
+    border-radius: 8px;
+  }
+  .home-hover-div {
+    top: 158px;
+    left: 55px;
+  }
+  .search-hover-div {
+    top: 223px;
+    left: 55px;
+  }
+  .explore-hover-div {
+    top: 283px;
+    left: 55px;
+  }
+  .reels-hover-div {
+    top: 344px;
+    left: 55px;
+  }
+  .new-post-hover-div {
+    top: 528px;
+    left: 55px;
+  }
+  .direct-hover-div {
+    top: 405px;
+    left: 55px;
+  }
+  .heart-hover-div {
+    top: 466px;
+    left: 55px;
+  }
+}
+
+@media (min-width: 834px) and (min-height: 692px) {
+  .nav-div {
+    height: 100%;
+  }
+  .large-nav-red-dot {
+    top: 437px;
+  }
+  .home-hover-div {
+    top: 158px;
+    left: 55px;
+  }
+  .search-hover-div {
+    top: 223px;
+    left: 55px;
+  }
+  .explore-hover-div {
+    top: 283px;
+    left: 55px;
+  }
+  .reels-hover-div {
+    top: 344px;
+    left: 55px;
+  }
+  .new-post-hover-div {
+    top: 528px;
+    left: 55px;
+  }
+  .direct-hover-div {
+    top: 405px;
+    left: 55px;
+  }
+  .heart-hover-div {
+    top: 466px;
+    left: 55px;
+  }
+}
+
+@media (min-width: 834px) {
+  .nav-div {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content:center;*/
+    border-right: 1px solid rgb(71, 71, 71);
+    border-top: none;
+    z-index: 100;
+    padding: 22px 0;
+  }
+  .small-nav-top-div {
+    opacity: 0;
+    display: none;
+  }
+  .large-nav-top-div {
+    opacity: 1;
+  }
+  .large-nav-bottom-div {
+    opacity: 1;
+    /*display: block;
+    margin-top: auto;
+    margin-bottom: 60px;*/
+  }
+  .instagram-icon-div {
+    opacity: 1;
+    display: block;
+    margin-bottom: 29px;
+  }
+  .home-div {
+    margin-left: 0px;
+  }
+  .profile-div {
+    margin-right: 0px;
+  }
+  .large-nav-red-dot {
+    position: absolute;
+  }  
+}
