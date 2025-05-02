@@ -1,4 +1,4 @@
-# [Instagram Feed Mock-up] (https://scriptsculptorjs.github.io/instagram-feed-practice/)
+# [Instagram Feed Mock-up](https://scriptsculptorjs.github.io/instagram-feed-practice/)
 Replicated version of Instagrams Feed after user logs in while in dark mode.
 
 ## Motivation
