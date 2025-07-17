@@ -1,6 +1,11 @@
 # [Instagram Feed Mock-up](https://scriptsculptorjs.github.io/instagram-feed-practice/)
 Replicated version of Instagrams Feed after user logs in while in dark mode.
-
+![Instagram Feed Mock-up](assets/instagram-feed-practice.png)
+## Table of Contents
+* [Motivation](#motivation)
+* [Built With](#built-with)
+* [How to Use](#how-to-use)
+* [Project Status](#project-status)
 ## Motivation
 Wanted to put the skills I had acquired to use by attempting to imitate what I saw in response to different screen sizes (not including mobile) and without Javascript. Icons are not exactly the same, but close enough to give the same meaning as the ones on Instagram.
 
